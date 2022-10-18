@@ -1,0 +1,166 @@
+<html>
+<head>
+    <title>Coupons | RedStore</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="icon" href="images/logo100.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!------copoun page--------->
+
+<div class="container7">
+    <div class="coupon-card">
+        <img src="images/a.png" alt="amazone" class="logo6">
+            <h3>20% flat off on all rides within the city using <br> HDFC Credit Card</h3>
+        <div class="coupon-row">
+            <span id="cpnCode">STEALDEAL25</span>
+            <span id="cpnBtn">COPY CODE</span>
+        </div>
+            <p>Valid Till: 20 Dec, 2022</p>
+            <div class="circle4"></div>
+            <div class="circle5"></div>
+    </div>
+</div>
+<div class="container7">
+    <div class="coupon-card">
+        <img src="images/f.png" alt="amazone" class="logo6">
+            <h3>20% flat off on all rides within the city using <br> Online paythm</h3>
+        <div class="coupon-row">
+            <span id="cpnCode4">BGFHYGF67</span>
+            <span id="cpnBtn4">COPY CODE</span>
+        </div>
+        <p>Valid Till: 20 Dec, 2022</p>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+    </div>
+</div>
+<div class="container7">
+    <div class="coupon-card">
+        <img src="images/m.png" alt="amazone" class="logo6">
+            <h3>20% flat off on all rides within the city using <br> SBI Credit Card</h3>
+        <div class="coupon-row">
+            <span id="cpnCode5">BGTFGJK89</span>
+            <span id="cpnBtn5">COPY CODE</span>
+        </div>
+        <p>Valid Till: 20 Dec, 2022</p>
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+    </div>
+</div>
+<!-----------footer--------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <a href="https://play.google.com/store/apps/details?id=in.mynamaste.foodclub_gro"><img src="images/play-store.png"></a>
+                    <a href="https://apps.apple.com/ee/app/redstore/id1520480338"><img src="images/app-store.png"></a>
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <a href="index.html"><img src="images/logo-white.png"></a>
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Link</h3>
+                <ul>
+                    <a href="coupon.html"><li>Coupons</li></a>
+                    <a href=""><li>Blog Post</li></a>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <a href="https://www.facebook.com/profile.php?id=100086476725694"><li>Facebook</li></a>
+                    <a href="https://twitter.com/REDSTORE_"><li>Twitter</li></a>
+                    <a href="https://www.instagram.com/red_store002/"><li>Instagram</li></a>
+                    <a href="https://www.youtube.com/channel/UC3usjN7ttOB2cW1tZ1g6FLg"><li>YouTube</li></a>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">☺ Copyright 2022-Website</p>
+    </div>
+</div>
+
+<!-------js for toggle menu-------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight = "0px")
+                {
+                   MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+<!-----js for coupon code-------->
+    <script>
+        var cpnBtn = document.getElementById("cpnBtn");
+        var cpnCode = document.getElementById("cpnCode");
+
+        cpnBtn.onclick = function(){
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+            cpnBtn.innerHTML = "COPIED";
+            setTimeout(function(){
+                cpnBtn.innerHTML = "COPY CODE";
+            }, 800);
+        }
+    </script>
+<!-----js for coupon code 2------>
+<script>
+    var cpnBtn4 = document.getElementById("cpnBtn4");
+    var cpnCode4 = document.getElementById("cpnCode4");
+
+    cpnBtn4.onclick = function(){
+        navigator.clipboard.writeText(cpnCode4.innerHTML);
+        cpnBtn4.innerHTML = "COPIED";
+        setTimeout(function(){
+            cpnBtn4.innerHTML = "COPY CODE";
+        }, 800);
+    }
+</script>
+<!----js for coupon 3------->
+<script>
+    var cpnBtn5 = document.getElementById("cpnBtn5");
+    var cpnCode5 = document.getElementById("cpnCode5");
+
+    cpnBtn5.onclick = function(){
+        navigator.clipboard.writeText(cpnCode5.innerHTML);
+        cpnBtn5.innerHTML = "COPIED";
+        setTimeout(function(){
+            cpnBtn5.innerHTML = "COPY CODE";
+        }, 800);
+    }
+</script>
+</body>
+
+</html>
